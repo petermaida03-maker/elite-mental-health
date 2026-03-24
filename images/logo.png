@@ -11,3 +11,8 @@
         <a href="appointment.html">Book Appointment</a>
     </nav>
 </header>
+header img.logo {
+    max-height: 70px;   /* adjust the height as needed */
+    display: block;
+    margin: 0 auto 10px auto;  /* centers the logo above the header text */
+}
