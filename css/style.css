@@ -1,17 +1,4 @@
-<header class="site-header">
-    <div class="header-content">
-        <img src="images/logo.png" alt="Elite Mental Health Counselling Logo" class="logo">
-        <h1>Elite Mental Health Counselling</h1>
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="fees.html">Fees</a>
-        <a href="contact.html">Contact</a>
-        <a href="appointment.html">Book Appointment</a>
-    </nav>
-</header>/* ====== General Styles ====== */
+/* ====== General Styles ====== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -31,26 +18,39 @@ a:hover {
 }
 
 /* ====== Header & Navigation ====== */
-header {
+header.site-header {
     background-color: #004a99;
     color: #fff;
-    padding: 20px 10px;
+    padding: 15px 10px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0 0 10px 0;
-    font-size: 2rem;
+header.site-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-nav {
+header.site-header img.logo {
+    max-height: 70px;
+}
+
+header.site-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header.site-header nav {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-nav a {
+header.site-header nav a {
     color: #fff;
     font-weight: bold;
     padding: 8px 15px;
@@ -58,7 +58,7 @@ nav a {
     transition: background 0.3s;
 }
 
-nav a:hover {
+header.site-header nav a:hover {
     background-color: #003366;
 }
 
@@ -113,14 +113,18 @@ footer {
 
 /* ====== Responsive ====== */
 @media (max-width: 768px) {
-    nav {
+    header.site-header .header-content {
         flex-direction: column;
     }
-    
-    header h1 {
-        font-size: 1.5rem;
+
+    header.site-header h1 {
+        font-size: 1.4rem;
     }
-    
+
+    header.site-header nav a {
+        padding: 6px 12px;
+    }
+
     button {
         width: 100%;
     }
