@@ -1,131 +1,63 @@
-/* ===== General Styles ===== */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f5f9fc;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f4f8fb;
 }
 
-a {
-    text-decoration: none;
-    color: #0077cc;
-}
-
-a:hover {
-    color: #005fa3;
-}
-
-/* ===== Header & Navigation ===== */
-header.site-header {
-    background-color: #004a99;
-    color: #fff;
-    padding: 15px 10px;
+header {
+    background-color: #0b3d91;
+    color: white;
+    padding: 15px;
     text-align: center;
 }
 
-header.site-header .header-content {
+.header-top {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
-header.site-header img.logo {
-    max-height: 70px;
+.logo {
+    height: 70px;
 }
 
-header.site-header h1 {
-    margin: 0;
-    font-size: 1.8rem;
-}
-
-header.site-header nav {
+nav {
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
 }
 
-header.site-header nav a {
-    color: #fff;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
     font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 4px;
-    transition: background 0.3s;
 }
 
-header.site-header nav a:hover {
-    background-color: #003366;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* ===== Main Content ===== */
 main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-h2 {
-    color: #004a99;
-    margin-bottom: 15px;
-}
-
-h3 {
-    color: #004a99;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    padding: 20px;
 }
 
 button {
-    background-color: #0077cc;
-    color: #fff;
+    background-color: #0b3d91;
+    color: white;
+    padding: 10px 18px;
     border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
     margin-top: 15px;
 }
 
 button:hover {
-    background-color: #005fa3;
+    background-color: #082c6c;
 }
 
-/* ===== Footer ===== */
 footer {
-    background-color: #004a99;
-    color: #fff;
+    background-color: #0b3d91;
+    color: white;
     text-align: center;
-    padding: 15px 10px;
-    margin-top: 30px;
-    font-size: 0.9rem;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-    header.site-header .header-content {
-        flex-direction: column;
-    }
-
-    header.site-header h1 {
-        font-size: 1.4rem;
-    }
-
-    header.site-header nav a {
-        padding: 6px 12px;
-    }
-
-    button {
-        width: 100%;
-    }
+    padding: 12px;
+    margin-top: 20px;
 }
