@@ -41,7 +41,13 @@ nav a {
     text-decoration: none;
     margin: 10px;
     font-weight: bold;
-    transition: color 0.3s, transform 0.2s;
+    transition: color 0.3s, transform 0.2s;/* ==============================
+   Active Navigation Link Styling
+============================== */
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
 }
 
 nav a:hover {
