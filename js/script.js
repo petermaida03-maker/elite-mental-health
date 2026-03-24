@@ -1,9 +1,25 @@
-// Smooth scrolling for navigation
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function(e){
-    if(this.getAttribute('href').startsWith('#')) {
+// ==============================
+// Active Page Highlight in Navigation
+// ==============================
+const navLinks = document.querySelectorAll('nav a');
+const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
+
+navLinks.forEach(link => {
+  const linkHref = link.getAttribute('href');
+  
+  // Highlight active link
+  if(linkHref === currentPage || (linkHref === 'index.html' && currentPage === '')) {
+    link.style.fontWeight = 'bold';
+    link.style.textDecoration = 'underline';
+  }
+
+  // ==============================
+  // Smooth Scrolling for In-Page Anchors
+  // ==============================
+  if(linkHref.startsWith('#') && document.querySelector(linkHref)) {
+    link.addEventListener('click', function(e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-    }
-  });
+      document.querySelector(linkHref).scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 });
