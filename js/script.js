@@ -6,11 +6,10 @@ const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.h
 
 navLinks.forEach(link => {
   const linkHref = link.getAttribute('href');
-  
-  // Highlight active link
+
+  // Highlight active link using a CSS class
   if(linkHref === currentPage || (linkHref === 'index.html' && currentPage === '')) {
-    link.style.fontWeight = 'bold';
-    link.style.textDecoration = 'underline';
+    link.classList.add('active');
   }
 
   // ==============================
