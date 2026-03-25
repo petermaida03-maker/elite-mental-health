@@ -212,3 +212,9 @@ form button:hover {
         flex-direction: column;
     }
 }
+.logo {
+    width: 150px;   /* adjust this number if too big or small */
+    height: auto;   /* keeps the proportions correct */
+    display: block; /* optional: centers horizontally if margin is added */
+    margin: 0 auto; /* optional: centers the logo */
+}
