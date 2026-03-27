@@ -229,3 +229,23 @@ form button:hover {
         width: 100px;   /* even smaller for very small devices */
     }
 }
+/* ==============================
+   WEBSITE BACKGROUND & TRANSPARENCY
+   (Professional counselling style)
+============================== */
+
+/* Background image for entire website */
+body {
+    background-color: #f4f8fb; /* fallback color */
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Slight transparent white background for main content */
+main {
+    background: rgba(255, 255, 255, 0.9); /* recommended transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
